@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Champion Pullover Hooded Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
+      "price": 749.25,
+      "stock": 7
+    },
+    {
+      "id": 2,
+      "name": "Champion Pullover Hooded Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
+      "price": 749.25,
+      "stock": 7
+    },
+    {
+      "id": 3,
+      "name": "Champion Pullover Hooded Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
+      "price": 749.25,
+      "stock": 7
+    },
+    {
+      "id": 4,
+      "name": "Champion Pullover Hooded Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
+      "price": 749.25,
+      "stock": 7
+    },
+    {
+      "id": 5,
+      "name": "Champion Pullover Hooded Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
+      "price": 749.25,
+      "stock": 7
+    }
+  ]
+}
