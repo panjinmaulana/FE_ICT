@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useParams, useHistory } from "react-router-dom";
 
 import {
@@ -44,7 +44,7 @@ export default function EditForm() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h3 className="text-center mt-5">Edit Form Product</h3>
       <div style={{ width: "50%", margin: "0 auto" }}>
         <form>

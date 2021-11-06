@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { addProductToCarts } from "../store/actions/cartsAction.js";
 
-import {
-  fetchProducts,
-  deleteProduct,
-  updateStock,
-} from "../store/actions/productsAction.js";
+import { fetchProducts, updateStock } from "../store/actions/productsAction.js";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -37,10 +33,10 @@ export default function Home() {
 
   return (
     <div className="container">
-      <div class="row mt-5">
+      <div class="row">
         {products.map((product) => {
           return (
-            <div key={product.id} class="col-sm-3">
+            <div key={product.id} class="col-sm-3 mt-5">
               <div class="card" style={{ width: "13rem" }}>
                 <div class="card-body">
                   <img
@@ -51,7 +47,8 @@ export default function Home() {
                   />
                   <h5 class="card-title text-center">{product.name}</h5>
                   <p>
-                    Price: {product.price} <br /> Stock: {product.stock}
+                    Price: Rp. {product.price.toLocaleString("in", "ID")} <br />{" "}
+                    Stock: {product.stock}
                   </p>
 
                   {product.stock ? (

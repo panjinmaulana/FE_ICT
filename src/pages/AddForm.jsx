@@ -43,7 +43,7 @@ export default function AddForm() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h3 className="text-center mt-5">Add Form Product</h3>
 
       <div style={{ width: "50%", margin: "0 auto" }}>

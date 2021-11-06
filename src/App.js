@@ -42,13 +42,6 @@ export default function App() {
                 >
                   My Product
                 </Link>
-                <Link
-                  to="/add-product"
-                  class="nav-link active"
-                  aria-current="page"
-                >
-                  Add Product
-                </Link>
               </div>
             </div>
           </div>

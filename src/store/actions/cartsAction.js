@@ -1,5 +1,5 @@
 import axios from "axios";
-import { fetchProductById, fetchProducts, updateStock } from "./productsAction";
+import { fetchProducts, updateStock } from "./productsAction";
 
 // Thunk function
 export function addProductToCarts(product) {

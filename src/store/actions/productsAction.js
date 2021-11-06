@@ -36,7 +36,7 @@ export function updateProduct(id, product, history) {
       .put(`http://localhost:3000/products/${id}`, { ...product })
       .then((_) => {
         dispatch(fetchProducts());
-        history.push("/");
+        history.push("/my-product");
       })
       .catch((err) => console.log(err));
   };
