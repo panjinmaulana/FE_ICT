@@ -71,6 +71,11 @@ export default function Cart() {
                       </div>
                     </div>
                   </div>
+                  <div className="col">
+                    <h3 className="text-center mt-5">
+                      Total Price: {cart.total_price * cart.quantity}
+                    </h3>
+                  </div>
                 </div>
               </div>
             );

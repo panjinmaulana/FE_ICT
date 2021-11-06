@@ -1,21 +1,27 @@
 import axios from "axios";
-import { updateStock } from "./productsAction";
+import { fetchProductById, updateStock } from "./productsAction";
 
 // Thunk function
 export function addProductToCarts(product) {
   return (dispatch) => {
-    axios
-      .post(`http://localhost:3000/carts`, {
-        id: product.id,
-        name: product.name,
-        image_url: product.image_url,
-        price: product.price,
-        quantity: 1,
-      })
-      .then(({ data }) => {
-        console.log("berhasil");
-        // dispatch({ type: "ADD_PRODUCT_TO_CARTS", payload: data });
-      })
+    dispatch(fetchProductById(product.id))
+      .then(({ data }) =>
+        axios
+          .post(`http://localhost:3000/carts`, {
+            id: product.id,
+            name: product.name,
+            image_url: product.image_url,
+            price: product.price,
+            stock: data.stock,
+            quantity: 1,
+            total_price: product.price * 1,
+          })
+          .then(({ data }) => {
+            console.log("berhasil");
+            // dispatch({ type: "ADD_PRODUCT_TO_CARTS", payload: data });
+          })
+          .catch((err) => console.log(err))
+      )
       .catch((err) => console.log(err));
   };
 }

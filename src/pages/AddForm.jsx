@@ -28,7 +28,18 @@ export default function AddForm() {
   function handleOnClick(e) {
     e.preventDefault();
 
-    dispatch(addProduct(product, history));
+    dispatch(
+      addProduct(
+        {
+          id: product.id,
+          name: product.name,
+          image_url: product.image_url,
+          price: +product.price,
+          stock: product.stock,
+        },
+        history
+      )
+    );
   }
 
   return (

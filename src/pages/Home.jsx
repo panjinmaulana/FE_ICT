@@ -18,7 +18,17 @@ export default function Home() {
   }, []);
 
   function handleOnClick(e, product) {
-    dispatch(addProductToCarts(product));
+    e.preventDefault();
+
+    dispatch(
+      addProductToCarts({
+        id: product.id,
+        name: product.name,
+        image_url: product.image_url,
+        price: +product.price,
+        stock: product.stock,
+      })
+    );
   }
 
   return (

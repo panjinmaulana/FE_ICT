@@ -28,7 +28,19 @@ export default function EditForm() {
   function handleOnClick(e) {
     e.preventDefault(e);
 
-    dispatch(updateProduct(product.id, product, history));
+    dispatch(
+      updateProduct(
+        product.id,
+        {
+          id: product.id,
+          name: product.name,
+          image_url: product.image_url,
+          price: +product.price,
+          stock: +product.stock,
+        },
+        history
+      )
+    );
   }
 
   return (

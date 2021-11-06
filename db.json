@@ -4,7 +4,7 @@
       "id": "product-226004",
       "name": "Champion Hooded Full Zip Sweatshirt",
       "image_url": "https://dynamic.zacdn.com/i9YGd7Qjk_yyZkPCMFRH6ed396A=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-0784-4505652-4.jpg",
-      "price": "1199000",
+      "price": "100000",
       "stock": 1
     },
     {
@@ -19,7 +19,7 @@
       "name": "Champion Hooded Full Zip Sweatshirt",
       "image_url": "https://dynamic.zacdn.com/i9YGd7Qjk_yyZkPCMFRH6ed396A=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-0784-4505652-4.jpg",
       "price": "1199000",
-      "stock": 2
+      "stock": 0
     }
   ],
   "carts": [
@@ -29,8 +29,17 @@
       "image_url": "https://dynamic.zacdn.com/i9YGd7Qjk_yyZkPCMFRH6ed396A=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-0784-4505652-4.jpg",
       "price": 1199000,
       "stock": 3,
-      "quantity": 1,
+      "quantity": 3,
       "total_price": 1199000
+    },
+    {
+      "id": "product-226004",
+      "name": "Champion Hooded Full Zip Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/i9YGd7Qjk_yyZkPCMFRH6ed396A=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-0784-4505652-4.jpg",
+      "price": 100000,
+      "stock": 1,
+      "quantity": 0,
+      "total_price": 100000
     }
   ]
 }
