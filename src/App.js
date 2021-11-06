@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import AddForm from "./pages/AddForm";
 import EditForm from "./pages/EditForm";
+import MyProduct from "./pages/MyProduct";
+import Cart from "./pages/Cart";
 
 export default function App() {
   return (
@@ -30,8 +32,22 @@ export default function App() {
                 <Link to="/" class="nav-link active" aria-current="page">
                   Home
                 </Link>
-                <Link to="/add-product" class="nav-link" aria-current="page">
-                  Add
+                <Link to="/my-cart" class="nav-link active" aria-current="page">
+                  My Cart
+                </Link>
+                <Link
+                  to="/my-product"
+                  class="nav-link active"
+                  aria-current="page"
+                >
+                  My Product
+                </Link>
+                <Link
+                  to="/add-product"
+                  class="nav-link active"
+                  aria-current="page"
+                >
+                  Add Product
                 </Link>
               </div>
             </div>
@@ -43,6 +59,12 @@ export default function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/my-cart">
+            <Cart />
+          </Route>
+          <Route path="/my-product">
+            <MyProduct />
           </Route>
           <Route path="/add-product">
             <AddForm />

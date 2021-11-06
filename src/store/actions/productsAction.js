@@ -33,7 +33,7 @@ export function fetchProductById(id) {
 export function updateProduct(id, product, history) {
   return (dispatch) => {
     axios
-      .patch(`http://localhost:3000/products/${id}`, { ...product })
+      .put(`http://localhost:3000/products/${id}`, { ...product })
       .then((_) => {
         dispatch(fetchProducts());
         history.push("/");
@@ -46,6 +46,18 @@ export function deleteProduct(id) {
   return (dispatch) => {
     axios
       .delete(`http://localhost:3000/products/${id}`)
+      .then((_) => {
+        dispatch(fetchProducts());
+      })
+      .catch((err) => console.log(err));
+  };
+}
+
+export function updateStock(id, stock) {
+  return (dispatch) => {
+    console.log(stock);
+    axios
+      .patch(`http://localhost:3000/products/${id}`, { stock })
       .then((_) => {
         dispatch(fetchProducts());
       })

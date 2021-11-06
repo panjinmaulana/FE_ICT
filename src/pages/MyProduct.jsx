@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { addProductToCarts } from "../store/actions/cartsAction.js";
 
 import {
   fetchProducts,
   deleteProduct,
-  updateStock,
 } from "../store/actions/productsAction.js";
 
-export default function Home() {
+export default function MyProduct() {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.productsReducer.products);
 
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
 
-  function handleOnClick(e, product) {
-    dispatch(addProductToCarts(product));
+  const products = useSelector((state) => state.productsReducer.products);
+
+  function handleOnClick(e, id) {
+    e.preventDefault();
+
+    dispatch(deleteProduct(id));
   }
 
   return (
@@ -39,13 +40,19 @@ export default function Home() {
                   <p>
                     Price: {product.price} <br /> Stock: {product.stock}
                   </p>
-
+                  <Link
+                    to={`/edit-product/${product.id}`}
+                    type="button"
+                    className="btn btn-success"
+                  >
+                    Edit
+                  </Link>
                   <button
                     type="button"
-                    className="btn btn-success mt-3"
-                    onClick={(e) => handleOnClick(e, product)}
+                    className="btn btn-danger"
+                    onClick={(e) => handleOnClick(e, product.id)}
                   >
-                    Add to Cart
+                    Delete
                   </button>
                 </div>
               </div>
