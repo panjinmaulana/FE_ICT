@@ -44,58 +44,61 @@ export default function AddForm() {
 
   return (
     <div className="container">
-      <h3 className="text-center mt-5">Add Form Product</h3>
+      <h3 className="text-center mt-5" data-testid="add-form-product">
+        Add Form Product
+      </h3>
 
       <div style={{ width: "50%", margin: "0 auto" }}>
         <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label for="name" className="form-label">
               Name
             </label>
             <input
               name="name"
               type="text"
-              class="form-control"
+              className="form-control"
               onChange={(e) => handleOnChange(e)}
             />
           </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label for="name" className="form-label">
               Image URL
             </label>
             <input
               name="image_url"
               type="text"
-              class="form-control"
+              className="form-control"
               onChange={(e) => handleOnChange(e)}
             />
           </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label for="name" className="form-label">
               Price
             </label>
             <input
               name="price"
               type="number"
-              class="form-control"
+              className="form-control"
               onChange={(e) => handleOnChange(e)}
             />
           </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label for="name" className="form-label">
               Stock
             </label>
             <input
               name="stock"
               type="number"
-              class="form-control"
+              className="form-control"
               onChange={(e) => handleOnChange(e)}
             />
           </div>
           <button
             type="button"
-            class="btn btn-primary"
+            className="btn btn-primary"
             onClick={(e) => handleOnClick(e)}
+            data-testid="button-add-form-product"
           >
             Submit
           </button>

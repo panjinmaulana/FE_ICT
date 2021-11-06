@@ -45,61 +45,72 @@ export default function EditForm() {
 
   return (
     <div className="container">
-      <h3 className="text-center mt-5">Edit Form Product</h3>
+      <h3 className="text-center mt-5" data-testid="edit-product">
+        Edit Form Product
+      </h3>
       <div style={{ width: "50%", margin: "0 auto" }}>
         <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label
+              for="name"
+              className="form-label"
+              data-testid="name-edit-form"
+            >
               Name
             </label>
             <input
               name="name"
               type="text"
-              class="form-control"
+              className="form-control"
               value={product.name}
               onChange={(e) => handleOnChange(e)}
             />
           </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label
+              for="name"
+              className="form-label"
+              data-testid="image-url-edit-form"
+            >
               Image URL
             </label>
             <input
               name="image_url"
               type="text"
-              class="form-control"
+              className="form-control"
               value={product.image_url}
               onChange={(e) => handleOnChange(e)}
             />
           </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label for="name" className="form-label">
               Price
             </label>
             <input
               name="price"
               type="number"
-              class="form-control"
+              className="form-control"
               value={product.price}
               onChange={(e) => handleOnChange(e)}
             />
           </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">
+          <div className="mb-3">
+            <label for="name" className="form-label">
               Stock
             </label>
             <input
               name="stock"
               type="number"
-              class="form-control"
+              className="form-control"
               value={product.stock}
               onChange={(e) => handleOnChange(e)}
             />
           </div>
           <button
             type="button"
-            class="btn btn-primary"
+            className="btn btn-primary"
             onClick={(e) => handleOnClick(e)}
+            data-testid="button-submit"
           >
             Submit
           </button>

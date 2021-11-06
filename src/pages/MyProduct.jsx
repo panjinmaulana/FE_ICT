@@ -9,7 +9,6 @@ import {
   deleteProduct,
 } from "../store/actions/productsAction.js";
 import { fetchCarts } from "../store/actions/cartsAction.js";
-import cartsReducer from "../store/reducers/cartsReducer.js";
 
 export default function MyProduct() {
   const dispatch = useDispatch();
@@ -18,8 +17,6 @@ export default function MyProduct() {
 
   const cartsName = carts.map((cart) => cart.name);
   const productSold = carts.map((cart) => cart.quantity);
-
-  console.log(productSold);
 
   const [state, setState] = useState({
     labels: cartsName,
@@ -49,11 +46,17 @@ export default function MyProduct() {
 
   return (
     <div className="container">
-      <Link to="/add-product" className="btn btn-success my-5">
-        Add Product
-      </Link>
-      <div class="row">
-        <table class="table table-bordered">
+      <div className="text-end">
+        <Link
+          to="/add-product"
+          className="btn btn-success my-5"
+          data-testid="add-product"
+        >
+          Add Product
+        </Link>
+      </div>
+      <div className="row">
+        <table className="table table-bordered">
           <thead>
             <tr>
               <th scope="col">Product ID</th>
@@ -103,34 +106,38 @@ export default function MyProduct() {
 
         {products.map((product) => {
           return (
-            <div key={product.id} class="col-sm-3 mt-5">
-              <div class="card" style={{ width: "13rem" }}>
-                <div class="card-body">
+            <div key={product.id} className="col-sm-3 mt-5">
+              <div className="card" style={{ width: "13rem" }}>
+                <div className="card-body">
                   <img
                     src={product.image_url}
-                    class="card-img-top mx-auto d-block"
+                    className="card-img-top mx-auto d-block"
                     alt="product.name"
                     style={{ width: "80%" }}
                   />
-                  <h5 class="card-title text-center">{product.name}</h5>
-                  <p>
+                  <h5 className="card-title text-center">{product.name}</h5>
+                  <p className="ms-2">
                     Price: Rp. {product.price.toLocaleString("in", "ID")} <br />{" "}
                     Stock: {product.stock}
                   </p>
-                  <Link
-                    to={`/edit-product/${product.id}`}
-                    type="button"
-                    className="btn btn-success"
-                  >
-                    Edit
-                  </Link>
-                  <button
-                    type="button"
-                    className="btn btn-danger"
-                    onClick={(e) => handleOnClick(e, product.id)}
-                  >
-                    Delete
-                  </button>
+                  <div className="text-center">
+                    <Link
+                      to={`/edit-product/${product.id}`}
+                      type="button"
+                      className="btn btn-success me-2"
+                      data-testid="button-edit"
+                    >
+                      Edit
+                    </Link>
+                    <button
+                      type="button"
+                      className="btn btn-danger"
+                      onClick={(e) => handleOnClick(e, product.id)}
+                      data-testid="button-delete"
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

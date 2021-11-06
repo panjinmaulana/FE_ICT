@@ -17,18 +17,18 @@ export default function Cart() {
         <div className="col">
           {carts.map((cart) => {
             return (
-              <div class="card my-5" style={{ maxWidth: "540px" }}>
-                <div class="row g-0">
-                  <div class="col-md-4">
+              <div className="card my-5" style={{ maxWidth: "540px" }}>
+                <div className="row g-0">
+                  <div className="col-md-4">
                     <img
                       src={cart.image_url}
-                      class="img-fluid rounded-start"
+                      className="img-fluid rounded-start"
                       alt={cart.name}
                     />
                   </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">{cart.name}</h5>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <h5 className="card-title">{cart.name}</h5>
                       <p>
                         Price: Rp. {cart.price.toLocaleString("in", "ID")}{" "}
                         <br /> Stock: {cart.stock - cart.quantity}
@@ -51,7 +51,7 @@ export default function Cart() {
                         <input
                           type="text"
                           id="disabledTextInput"
-                          class="form-control text-center"
+                          className="form-control text-center"
                           disabled
                           value={cart.quantity}
                           style={{ width: "30%" }}

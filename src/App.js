@@ -11,13 +11,13 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <Link to="/" class="navbar-brand">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <Link to="/" className="navbar-brand">
               Storepedia
             </Link>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -25,19 +25,23 @@ export default function App() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <Link to="/" class="nav-link active" aria-current="page">
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <Link to="/" className="nav-link active" aria-current="page">
                   Home
                 </Link>
-                <Link to="/my-cart" class="nav-link active" aria-current="page">
+                <Link
+                  to="/my-cart"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   My Cart
                 </Link>
                 <Link
                   to="/my-product"
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
                 >
                   My Product

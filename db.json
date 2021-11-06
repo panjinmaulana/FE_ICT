@@ -33,7 +33,7 @@
       "name": "ADIDAS baseball classic cap trefoil",
       "image_url": "https://dynamic.zacdn.com/yCXArqJrMVeT6dxS54rzmCk9f-0=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/adidas-3106-5814062-2.jpg",
       "price": 300000,
-      "stock": "20"
+      "stock": 17
     },
     {
       "id": "product-79512",
@@ -84,6 +84,15 @@
       "stock": 10,
       "quantity": 10,
       "total_price": 1349100
+    },
+    {
+      "id": "product-736061",
+      "name": "ADIDAS baseball classic cap trefoil",
+      "image_url": "https://dynamic.zacdn.com/yCXArqJrMVeT6dxS54rzmCk9f-0=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/adidas-3106-5814062-2.jpg",
+      "price": 300000,
+      "stock": 20,
+      "quantity": 3,
+      "total_price": 300000
     }
   ]
 }
