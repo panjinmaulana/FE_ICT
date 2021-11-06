@@ -44,7 +44,7 @@ export default function Cart() {
                               updateQuantity(cart.id, Number(cart.quantity) - 1)
                             )
                           }
-                          disabled={cart.quantity <= 1 ? true : false}
+                          disabled={cart.quantity == 0 ? true : false}
                         >
                           -
                         </button>

@@ -5,7 +5,7 @@
       "name": "Champion Short Sleeve T-Shirt",
       "image_url": "https://dynamic.zacdn.com/09dyoJqPByMcsR9rhgfEAPs-MP4=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-7009-4083692-4.jpg",
       "price": 399000,
-      "stock": 1
+      "stock": 2
     },
     {
       "id": "product-226003",
@@ -47,14 +47,14 @@
       "name": "Vans Ua Sk8-Hi",
       "image_url": "https://dynamic.zacdn.com/HQaM_0nx0xFfhxRPg8pErmDqyA0=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/vans-1150-3450012-2.jpg",
       "price": 999000,
-      "stock": "5"
+      "stock": 4
     },
     {
       "id": "product-585307",
       "name": "Ray-Ban RB4260D Sunglasses",
       "image_url": "https://dynamic.zacdn.com/m8AS3jvsnsw3ed0wt-o-NJIV7ms=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/ray-ban-0907-8608171-2.jpg",
       "price": 2299000,
-      "stock": "12"
+      "stock": 11
     }
   ],
   "carts": [
@@ -64,7 +64,7 @@
       "image_url": "https://dynamic.zacdn.com/09dyoJqPByMcsR9rhgfEAPs-MP4=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-7009-4083692-4.jpg",
       "price": 399000,
       "stock": 3,
-      "quantity": 2,
+      "quantity": 1,
       "total_price": 399000
     },
     {
@@ -93,6 +93,42 @@
       "stock": 20,
       "quantity": 3,
       "total_price": 300000
+    },
+    {
+      "id": "product-148123",
+      "name": "Vans Ua Sk8-Hi",
+      "image_url": "https://dynamic.zacdn.com/HQaM_0nx0xFfhxRPg8pErmDqyA0=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/vans-1150-3450012-2.jpg",
+      "price": 999000,
+      "stock": 5,
+      "quantity": 1,
+      "total_price": 999000
+    },
+    {
+      "id": "product-946925",
+      "name": "Wild Channel Women's Sling Bag / Shoulder Bag / Crossbody Bag",
+      "image_url": "https://dynamic.zacdn.com/mRT_A1Lgr70xvPaJZuyD9KlPo0E=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/wild-channel-5871-5804252-2.jpg",
+      "price": 369500,
+      "stock": 0,
+      "quantity": 5,
+      "total_price": 369500
+    },
+    {
+      "id": "product-665879",
+      "name": "lala",
+      "image_url": "https://dynamic.zacdn.com/i9YGd7Qjk_yyZkPCMFRH6ed396A=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-0784-4505652-4.jpg",
+      "price": 100,
+      "stock": 1,
+      "quantity": 0,
+      "total_price": 100
+    },
+    {
+      "id": "product-585307",
+      "name": "Ray-Ban RB4260D Sunglasses",
+      "image_url": "https://dynamic.zacdn.com/m8AS3jvsnsw3ed0wt-o-NJIV7ms=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/ray-ban-0907-8608171-2.jpg",
+      "price": 2299000,
+      "stock": 12,
+      "quantity": 1,
+      "total_price": 2299000
     }
   ]
 }

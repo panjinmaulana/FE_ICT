@@ -1,4 +1,5 @@
 import axios from "axios";
+import { fetchCarts } from "./cartsAction";
 
 // Thunk function
 export function fetchProducts() {
@@ -48,6 +49,12 @@ export function deleteProduct(id) {
       .delete(`http://localhost:3000/products/${id}`)
       .then((_) => {
         dispatch(fetchProducts());
+        axios
+          .delete(`http://localhost:3000/carts/${id}`)
+          .then((_) => {
+            dispatch(fetchCarts());
+          })
+          .catch((err) => console.log(err));
       })
       .catch((err) => console.log(err));
   };
