@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+
+import { addProduct } from "../store/actions/productsAction";
 
 export default function AddForm() {
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const [product, setProduct] = useState({
+    id: `product-${getRandomProduct()}`,
+    name: "",
+    image_url: "",
+    price: 0,
+    stock: 0,
+  });
+
+  function getRandomProduct() {
+    return Math.floor(Math.random() * 1000000);
+  }
+
+  function handleOnChange(e) {
+    const { name, value } = e.target;
+    setProduct({ ...product, [name]: value });
+  }
+
+  function handleOnClick(e) {
+    e.preventDefault();
+
+    dispatch(addProduct(product, history));
+  }
+
   return (
     <div>
       <h3 className="text-center mt-5">Add Form Product</h3>
@@ -11,27 +41,51 @@ export default function AddForm() {
             <label for="name" class="form-label">
               Name
             </label>
-            <input type="text" class="form-control" />
+            <input
+              name="name"
+              type="text"
+              class="form-control"
+              onChange={(e) => handleOnChange(e)}
+            />
           </div>
           <div class="mb-3">
             <label for="name" class="form-label">
               Image URL
             </label>
-            <input type="text" class="form-control" />
+            <input
+              name="image_url"
+              type="text"
+              class="form-control"
+              onChange={(e) => handleOnChange(e)}
+            />
           </div>
           <div class="mb-3">
             <label for="name" class="form-label">
               Price
             </label>
-            <input type="number" class="form-control" />
+            <input
+              name="price"
+              type="number"
+              class="form-control"
+              onChange={(e) => handleOnChange(e)}
+            />
           </div>
           <div class="mb-3">
             <label for="name" class="form-label">
               Stock
             </label>
-            <input type="number" class="form-control" />
+            <input
+              name="stock"
+              type="number"
+              class="form-control"
+              onChange={(e) => handleOnChange(e)}
+            />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onClick={(e) => handleOnClick(e)}
+          >
             Submit
           </button>
         </form>

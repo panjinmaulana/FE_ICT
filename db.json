@@ -4,22 +4,15 @@
       "id": 1,
       "name": "Champion Pullover Hooded Sweatshirt",
       "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
-      "price": 749.25,
-      "stock": 7
-    },
-    {
-      "id": 2,
-      "name": "Champion Pullover Hooded Sweatshirt",
-      "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
-      "price": 749.25,
-      "stock": 7
+      "price": "749250",
+      "stock": "5"
     },
     {
       "id": 3,
       "name": "Champion Pullover Hooded Sweatshirt",
       "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
-      "price": 749.25,
-      "stock": 7
+      "price": "876987",
+      "stock": "1"
     },
     {
       "id": 4,
@@ -29,11 +22,18 @@
       "stock": 7
     },
     {
-      "id": 5,
-      "name": "Champion Pullover Hooded Sweatshirt",
-      "image_url": "https://dynamic.zacdn.com/KP0pYRVFdSJlNDCIDVzulrX3maU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-8904-4262532-4.jpg",
-      "price": 749.25,
-      "stock": 7
+      "id": "product-226003",
+      "name": "Champion Hooded Full Zip Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/i9YGd7Qjk_yyZkPCMFRH6ed396A=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-0784-4505652-4.jpg",
+      "price": "1199000",
+      "stock": "3"
+    },
+    {
+      "id": "product-804936",
+      "name": "Champion Crew Neck Sweatshirt",
+      "image_url": "https://dynamic.zacdn.com/6FA8_1cxawrr7Egwmri9v11_aZA=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/champion-3405-2185282-4.jpg",
+      "price": "899000",
+      "stock": "1"
     }
   ]
 }
