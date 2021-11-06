@@ -55,10 +55,9 @@ export function deleteProduct(id) {
 
 export function updateStock(id, stock) {
   return (dispatch) => {
-    console.log(stock);
     axios
       .patch(`http://localhost:3000/products/${id}`, { stock })
-      .then((_) => {
+      .then(({ data }) => {
         dispatch(fetchProducts());
       })
       .catch((err) => console.log(err));

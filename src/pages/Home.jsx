@@ -20,13 +20,17 @@ export default function Home() {
   function handleOnClick(e, product) {
     e.preventDefault();
 
+    dispatch(updateStock(product.id, product.stock - 1));
+
     dispatch(
       addProductToCarts({
         id: product.id,
         name: product.name,
         image_url: product.image_url,
         price: +product.price,
-        stock: product.stock,
+        stock: +product.stock,
+        quantity: 1,
+        total_price: +product.price * 1,
       })
     );
   }
@@ -50,13 +54,17 @@ export default function Home() {
                     Price: {product.price} <br /> Stock: {product.stock}
                   </p>
 
-                  <button
-                    type="button"
-                    className="btn btn-success mt-3"
-                    onClick={(e) => handleOnClick(e, product)}
-                  >
-                    Add to Cart
-                  </button>
+                  {product.stock ? (
+                    <button
+                      type="button"
+                      className="btn btn-success"
+                      onClick={(e) => handleOnClick(e, product)}
+                    >
+                      Add to Cart
+                    </button>
+                  ) : (
+                    <button className="btn btn-danger">Out of Stock</button>
+                  )}
                 </div>
               </div>
             </div>
