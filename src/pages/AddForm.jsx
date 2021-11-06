@@ -34,8 +34,8 @@ export default function AddForm() {
           id: product.id,
           name: product.name,
           image_url: product.image_url,
-          price: +product.price,
-          stock: product.stock || 1,
+          price: +product.price || 100000,
+          stock: +product.stock || 1,
         },
         history
       )
